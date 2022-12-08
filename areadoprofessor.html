@@ -20,89 +20,43 @@
       <a cabecalho-menu-item>Cursos</a>
       <a cabecalho-menu-item>Unidades</a>
       <a cabecalho-menu-item>Informações</a>
-      <a cabecalho-menu-item>Login</a>
+      <a href="index.html" cabecalho-menu-item>Login</a>
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
     <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
     </nav>
     </header>
-    <center>
-      <h1>Boletims</h1>
-      <h3>Digite o nome,email ou RA do aluno:
-          <br>
-          <input id="gfg" type="text" 
-               placeholder="Pesquise">
-        
-      </h3>
-      
-      <br>
-      <br>
-      <table>
-          <tr>
-              <th>Nome</th>
-              <th>Email</th>
-              <th>RA</th>
-          </tr>
-          <tbody id="txtBusca">
-              <tr>
-                  <td>Alisson</td>
-                  <td>alisson@gmail.com</td>
-                  <td>123123123</td>
-              </tr>
-              <tr>
-                  <td>Arthur</td>
-                  <td>arthur@gmail.com</td>
-                  <td>456456456</td>
-              </tr>
-              <tr>
-                  <td>igor</td>
-                  <td>igor@gmail.com</td>
-                  <td>789789789</td>
-              </tr>
-              <tr>
-                  <td>juliana</td>
-                  <td>juliana@gmail.com</td>
-                  <td>147147147</td>
-              </tr>
-              <tr>
-                  <td>juan</td>
-                  <td>juana@gmail.com</td>
-                  <td>258258258</td>
-              </tr>
-          </tbody>
-      </table>
 
-      <script>
-          $(document).ready(function() {
-              $("#gfg").on("keyup", function() {
-                  var value = $(this).val().toLowerCase();
-                  $("#txtBusca tr").filter(function() {
-                      $(this).toggle($(this).text()
-                      .toLowerCase().indexOf(value) > -1)
-                  });
-              });
-          });
-      </script>
-</center>
+    <main>
 
-    <img class="fundo" img src="imagens/background.jpg" width="1900px" height="auto">
+        <div class="caixa-botoes">
+            <div class="botao">
+                <a href="minhasturmas.html">Minhas turmas</a>
+            </div>
 
-    <div class="caixa-botao">
-      <a class="Botao">Minhas turmas</a>
-      <br><br>
-      <a class="Botao">Alunos</a>
-      <br><br>
-      <a class="Botao">Boletim</a>
-      <br><br>
-      <a class="Botao">Gráficos</a>
-      <br><br>
-      <a class="Botao">Chamada</a>
-      <br><br>
-      <a class="Botao">Agenda</a>
-      <br><br>
-      <a class="Botao">Provas</a>
-   </div>
+            <div class="botao">
+                <a href="boletim.html">Boletim</a>
+            </div>
 
-    
+            <div class="botao">
+                <a href="graficos.html">Gráficos</a>
+            </div>
+
+            <div class="botao">
+                <a href="chamada.html">Chamada</a>
+            </div>
+
+            <div class="botao">
+                <a href="agenda.html">Agenda</a>
+            </div>
+
+            <div class="botao">
+                <a href="provas.html">Provas</a>
+            </div>
+            
+         </div>
+
+         
+    </main>
 
 </body>
 </html>
