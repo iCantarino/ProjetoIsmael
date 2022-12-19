@@ -1,0 +1,415 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Agenda</title>
+    <style>
+      main{
+          display: flex;
+          flex-direction: row;
+      }
+
+      .tabela-meses{
+          border-collapse: collapse;
+          background: rgb(209, 216, 226);
+          color: black;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          height: 20%;
+          width: 25%;
+      }
+        
+      th, td {
+          font-weight: bold;
+          padding: 3%;
+      }
+
+      .alerta{
+          background-color: rgb(100, 149, 237);
+      }
+ 
+      .meses{
+          color: rgb(19, 19, 102);
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-shadow: black 0.3em 0.3em 0.6em;
+          -webkit-text-stroke-width: 0.5px; 
+          -webkit-text-stroke-color: rgb(2, 2, 2);
+          padding: 2%;
+      }
+      #novembro{
+          filter: brightness(50%)
+
+      }
+      #janeiro{
+          filter: brightness(50%)
+      }
+      .tabela-atividade{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-collapse: collapse;
+        color: black;
+        background: rgb(130, 165, 231);
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .item{
+        width: 20em;
+      }
+      .back{
+        font-size: 200%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        padding: 5%;
+      }
+      .back:hover{
+        color: #0000ff;
+      }
+  </style>
+</head>
+
+<body >
+  <header class="cabecalho">
+    
+    <nav class="cabecalho-menu">
+      <img class="imagem-logo" img src="imagens/logo1W.png" alt="logo">
+
+      <ul>
+        <li><a href="areadoprofessor.html">Home</a></li>
+        <li><a href="#">Cursos</a></li>
+        <li><a href="#">Unidades</a></li>
+        <li><a href="#">InformaÃ§Ãµes</a></li>
+        <li><a href="index.html">Login</a></li>
+      </ul>
+
+      <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
+      <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
+    </nav>
+
+  </header>
+
+  <main>
+    
+    
+    <br/>
+  
+    <table class="tabela-meses" id="novembro" bgcolor="lightgrey" align="center" >
+  
+        <caption align="top">
+            <h2 class="meses">Novembro 2022</h2>
+        </caption>
+  
+  
+        <thead>
+            <tr>
+                <!-- Here we have applied inline style 
+                     to make it more attractive-->
+                
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Dom</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Seg</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Ter</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Qua</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Qui</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    Sex</th>
+                <th style="color: white; background: rgb(0, 2, 128);">
+                    SÃ¡b</th>
+            </tr>
+        </thead>
+  
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td class="alerta">2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td >12</td>
+            </tr>
+
+            <tr>
+                <td>13</td>
+                <td class="alerta">14</td>
+                <td class="alerta">15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td class="alerta">19</td>
+            </tr>
+
+            <tr>
+                <td class="alerta">20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+            </tr>
+
+            <tr>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+        </tbody>
+    </table>
+
+        
+        <br />
+      
+        <table class="tabela-meses" id="dezembro" bgcolor="lightgrey" align="center" cellspacing="32" cellpadding="32">
+      
+            <caption align="top">
+                <h2 class="meses">Dezembro 2022</h2>
+            </caption>
+      
+      
+            <thead>
+                <tr>
+                    <!-- Here we have applied inline style 
+                         to make it more attractive-->
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Dom</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Seg</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Ter</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Qua</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Qui</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Sex</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        SÃ¡b</th>
+                </tr>
+            </thead>
+      
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td class="alerta">2</td>
+                    <td >3</td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    
+                    <td>11</td>
+                    <td class="alerta">12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    
+                    <td>18</td>
+                    <td class="alerta">19</td>
+                    <td class="alerta">20</td>
+                    <td class="alerta">21</td>
+                    <td >22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    
+
+       
+        <br />
+      
+        <table class="tabela-meses" id="janeiro" bgcolor="lightgrey" align="center" ccellspacing="32" cellpadding="32">
+      
+            <caption align="top">
+                <h2 class="meses">Janeiro 2023</h2>
+            </caption>
+      
+      
+            <thead>
+                <tr>
+                    <!-- Here we have applied inline style 
+                         to make it more attractive-->
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Dom</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Seg</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Ter</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Qua</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Qui</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        Sex</th>
+                    <th style="color: white; background: rgb(0, 2, 128);">
+                        SÃ¡b</th>
+                </tr>
+            </thead>
+      
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr></tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+
+                <tr>
+                    <td>22</td>
+                    <td class="alerta">23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+  
+  <table border="1" class="tabela-atividade">
+    
+    <tr>
+        <th>ProgramaÃ§Ã£o Dezembro</th>
+        <th>Atividade</th>
+    </tr>
+    <tr>
+      <td id="item">02/12/2022</td>
+      <td>Atividade Formativa - Java</td>
+    </tr>
+    <tr>
+      <td>12/12/2022</td>
+      <td>Atividade Somativa - Java</td>
+    </tr>
+
+    <tr>
+      <td>19/12/2022</td>
+      <td>ApresentaÃ§Ã£o projeto final - Turma A</td>
+    </tr>
+
+    <tr>
+      <td class="item">20/12/2022</td>
+      <td class="item">ApresentaÃ§Ã£o projeto final - Turma B</td>
+    </tr>
+
+    <tr>
+      <td >21/12/2022</td><br>
+    <td>Encerramento de semestre</td>
+    </tr>
+</table>
+
+<a class="back" href="areadoprofessor.html">Voltar para a pÃ¡gina principal</a>
+</body>
+
+</html>
