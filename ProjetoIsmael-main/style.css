@@ -1,0 +1,194 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+:root {
+    --blue-color:#184dad;
+    --white-color:#ffffff;
+    --dark-blue-color:#082863;
+    --light-blue-color:#8BBCE9;
+    --black-color:#000000;
+
+    --font-smaller: 15px;
+    --font-small: 18px;
+    --font-medium: 20px;
+    --font-large: 25px;
+}
+
+
+
+
+body {
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+
+}
+
+.imagem-logo{
+    height: 50px;
+}
+
+.cabecalho-menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    margin: 0%;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.cabecalho-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.cabecalho-menu li {
+    position: relative;
+}
+.cabecalho-menu a:hover {
+    color: var(--light-blue-color);
+}
+
+
+.caixa-login{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow:7px 7px 60px var(--dark-blue-color);
+}
+.caixa-login h1{
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.caixa-login h5 {
+    text-align: center;
+}
+.form-login input{
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    color:#000;
+    background: #ddd;
+    outline: none;
+    border: none;
+    margin: 1em 0;
+
+}         
+.form-login .btn{
+    color: var(--black-color);
+    text-transform: uppercase;
+    background: var(--white-color);
+    opacity: .7;
+    transition:opacity .3s ease;
+}
+.btn:focus{
+    opacity: 1;
+}
+.caixa-login a{
+    text-decoration: none;
+    opacity: .7;
+}
+.caixa-login a:hover{
+    opacity: 1;
+}
+
+table {
+    margin: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    height: 500px;
+    
+}
+  
+td,
+th {
+    border: 1px solid #184dad;
+    text-align: center;
+    padding: 8px;
+}
+  
+table h1 {
+    color: green;
+}
+/*---------------------------------termina página index, login -----------------------------*/
+/* 
+.caixa-login OLD{
+    background-color: var(--blue-color);
+    box-shadow: var(--dark-blue-color) 5%;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    padding: 80px;
+    border-radius: 15px;
+    color: var(--white-color);
+    justify-content: center;
+} */
+
+/*---------------------------começa a página do professor -----------------------------*/
+.caixa-botoes{
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 4%;
+    padding: 1%;
+    float: left;
+}
+
+.botao{
+    background-color: #082863;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    height: 20%;
+    padding: 5%;
+    margin-top: 1%;
+    padding: 1%;
+    font-size: 150%;
+    margin-left: 2%;
+}
+.botao:hover{
+    background-color: #173772;
+    transform: scale(1.1);
+}
+
+#icon{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 25%;
+}
+/*-------------------------------termina a página do professor -------------------------*/
+
