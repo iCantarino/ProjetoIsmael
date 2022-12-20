@@ -65,8 +65,7 @@ public class RegisterController {
 		//salva usuario no banco de dados
 		ProfessorDao.insertOrUpdate(professor);
 		Sistema.professores.add(professor);
-		
-		//direciona para o dashboard
+	
 		result.redirectTo(AreaController.class).area();
 	}
 	

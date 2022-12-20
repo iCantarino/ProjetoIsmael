@@ -14,6 +14,43 @@
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
         </script>
+        
+      <style>
+	    #identificacao-de-turma {
+	      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    	  margin-left: 37%;
+	    }
+
+	    .tabela-chamada {
+	      margin-top: 5%;
+	      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	      background-color: rgb(228, 252, 252);
+	    }
+
+	    #enviar-botao {
+	      padding: 1%;
+	      cursor: pointer;
+	      margin-left: 15%;
+	      margin-top: 2%;
+	      margin-bottom: 5%;
+	      border-color: rgb(103, 160, 226);
+	      font-size: 20px;
+	      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	      background-color: rgb(148, 198, 255);
+	    }
+
+	    .back {
+	      font-size: 200%;
+    	  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	      color: black;
+    	  padding: 5%;
+	    }
+
+    	.back:hover {
+	      color: #0000ff;
+    	}
+  	</style>
+    
     <title>Chamada</title>
 </head>
 
@@ -22,47 +59,53 @@
     
     <nav class="cabecalho-menu">
       <img class="imagem-logo" img src="imagens/logo1W.png" alt="logo">
-      <a href="areadoprofessor.html" cabecalho-menu-item>Home</a>
+      <a href="<c:url value="area"/>" cabecalho-menu-item>Home</a>
       <a cabecalho-menu-item>Cursos</a>
       <a cabecalho-menu-item>Unidades</a>
       <a cabecalho-menu-item>Informações</a>
-      <a href="index.html" cabecalho-menu-item>Login</a>
+      <a href="<c:url value="index"/>" cabecalho-menu-item>Login</a>
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
     <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
     </nav>
     </header>
 
     <main>
+		
+		<h2 id="identificacao-de-turma">Chamada da turma M1P</h2>
+    	<form>
+      		<table class="tabela-chamada">
+    	    	<tr>
+		          <th>Nome</th>
+    	    	  <th>Presente</th>
+    		      <th>Faltou</th>
+		        </tr>
+    	    	<tbody id="txtBusca">
+    		      <tr>
+		            <td>Alisson</td>
+    	        	<td><input type="checkbox" id="presente" name="presente" checked></td>
+        		    <td><input type="checkbox" id="faltou" name="faltou" checked></td>
+	    	      </tr>
+		          <tr>
+        		    <td>Igor</td>
+    	    	    <td><input type="checkbox" id="presente" name="presente" checked></td>
+	            	<td><input type="checkbox" id="faltou" name="faltou" checked></td>
+	        	  </tr>
+    		      <tr>
+	    	        <td>Juliana</td>
+            		<td><input type="checkbox" id="presente" name="presente" checked></td>
+        	    	<td><input type="checkbox" id="faltou" name="faltou" checked></td>
+	    	      </tr>
+		          <tr>
+        	    	<td>Juan</td>
+        		    <td><input type="checkbox" id="presente" name="presente" checked></td>
+    	        	<td><input type="checkbox" id="faltou" name="faltou" checked></td>
+		          </tr>
+    	    	</tbody>
+    		  </table>
+		      <input id="enviar-botao" type="submit" value="enviar">
+    	</form>
 
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Primeiro</th>
-            <th scope="col">Último</th>
-            <th scope="col">Nickname</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+    	<a class="back" href="<c:url value="area"/>">Voltar para a página principal</a>
         
     </main>
 

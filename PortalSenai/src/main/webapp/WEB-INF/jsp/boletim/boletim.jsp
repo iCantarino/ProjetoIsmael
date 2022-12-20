@@ -22,11 +22,11 @@
     
     <nav class="cabecalho-menu">
       <img class="imagem-logo" img src="imagens/logo1W.png" alt="logo">
-      <a href="areadoprofessor.html" cabecalho-menu-item>Home</a>
+      <a href="<c:url value="area"/>" cabecalho-menu-item>Home</a>
       <a cabecalho-menu-item>Cursos</a>
       <a cabecalho-menu-item>Unidades</a>
       <a cabecalho-menu-item>Informações</a>
-      <a href="index.html" cabecalho-menu-item>Login</a>
+      <a href="<c:url value="index"/>"cabecalho-menu-item>Login</a>
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
     <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
     </nav>
@@ -50,27 +50,23 @@
           </tr>
           <tbody id="txtBusca">
               <tr>
-                  <td>Alisson</td>
+                  <td><a href="<c:url value="boletimAlisson"/>" >Alisson</a></td>
                   <td>alisson@gmail.com</td>
                   <td>123123123</td>
               </tr>
+
               <tr>
-                  <td>Arthur</td>
-                  <td>arthur@gmail.com</td>
-                  <td>456456456</td>
-              </tr>
-              <tr>
-                  <td>igor</td>
+                  <td><a href="<c:url value="boletimIgor"/>">Igor</a></td>
                   <td>igor@gmail.com</td>
                   <td>789789789</td>
               </tr>
               <tr>
-                  <td>juliana</td>
+                  <td><a href="<c:url value="boletimJuliana"/>">Juliana</a></td>
                   <td>juliana@gmail.com</td>
                   <td>147147147</td>
               </tr>
               <tr>
-                  <td>juan</td>
+                  <td><a href="<c:url value="boletimJuan"/>">Juan</a></td>
                   <td>juan@gmail.com</td>
                   <td>258258258</td>
               </tr>

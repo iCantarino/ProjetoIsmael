@@ -4,13 +4,12 @@ import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 
-@Path("boletim")
+@Path("boletimJuliana")
 @Controller
-public class BoletimController {
-
+public class BoletimJulianaController {
+	
 	@Get("")
-	public void boletim(){
+	public void boletimJuliana() {
 		
 	}
-	
 }

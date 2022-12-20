@@ -44,8 +44,6 @@ public class IndexController {
 		
 		validator.onErrorRedirectTo(this).index();
 		
-		
-		//direciona para o dashboard
 		result.redirectTo(AreaController.class).area();
 	}
 }

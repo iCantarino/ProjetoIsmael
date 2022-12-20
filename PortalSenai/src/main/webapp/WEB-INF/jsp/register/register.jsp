@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="login.js"></script>
-    <title>Área de Login</title>
+    <title>Área de Registro</title>
 </head>
 
 <body  >
@@ -35,19 +35,20 @@
   </header>
 
   <div class="caixa-login">
-        <h1>LOGIN</h1>
+        <h1>CADASTRO</h1>
         
-                    <c:if test="${not empty errors}">
+        
+        <c:if test="${not empty errors}">
 					
-					<div class="alert alert-danger" role="alert">
+			<div class="alert alert-danger" role="alert">
 					
-						<c:forEach var="error" items="${errors}">
-    				 		${error.message}<br />
-			  			</c:forEach>
+				<c:forEach var="error" items="${errors}">
+    				 ${error.message}<br />
+			  	</c:forEach>
 					
-					</div>
+			</div>
 					
-			  </c:if>  
+		</c:if>  
       
      <form method="post" action="registro/saveUser">
 
@@ -59,7 +60,7 @@
           
       </form>
     <h5><a href="#">Esqueceu sua senha?</a></h5>
-    <h5><a href="index.html">Login</a></h5>
+    <h5><a href="<c:url value="index"/>">Login</a></h5>
     </div>
   </div>
 
