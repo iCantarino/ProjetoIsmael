@@ -8,9 +8,9 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 public class Professor extends Model{
 	
-	@NotEmpty @Size(min=4, max=10)
+	@NotEmpty(message="{professor.nome.emBranco}") @Size(min=4, max=10, message="{professor.nome.size}")
 	private String nome;
-	@NotEmpty @Size(min=6, max=20)
+	@NotEmpty(message="{professor.senha.emBranco}") @Size(min=6, max=20, message="{professor.senha.size}")
 	private String senha;
 	
 	

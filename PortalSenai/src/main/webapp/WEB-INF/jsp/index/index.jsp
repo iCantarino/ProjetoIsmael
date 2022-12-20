@@ -37,17 +37,17 @@
   <div class="caixa-login">
         <h1>LOGIN</h1>
         
-                            <c:if test="${not empty errors}">
+        <c:if test="${not empty errors}">
 					
-					<div class="alert alert-danger" role="alert">
+			<div class="alert alert-danger" role="alert">
 					
-						<c:forEach var="error" items="${errors}">
-    				 		${error.message}<br />
-			  			</c:forEach>
+				<c:forEach var="error" items="${errors}">
+    				${error.message}<br />
+			  	</c:forEach>
 					
-					</div>
+			</div>
 					
-			  </c:if>  
+		</c:if>  
      <form method="post" action="index/logando">
 
           

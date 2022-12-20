@@ -25,38 +25,31 @@
       <a cabecalho-menu-item>Cursos</a>
       <a cabecalho-menu-item>Unidades</a>
       <a cabecalho-menu-item>Informações</a>
-      <a href="index.html" cabecalho-menu-item>Login</a>
+      <a href="<c:url value="index"/>" cabecalho-menu-item>Login</a>
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
     <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
     </nav>
     </header>
 
     <main>
-    
+    	
+    	<img id="icon" src="imagens/icon.png">
 
         <div class="caixa-botoes">
             <div class="botao">
-                <a href="minhasturmas.html">Minhas turmas</a>
+                <a href="<c:url value="minhasTurmas"/>">Minhas turmas</a>
             </div>
 
             <div class="botao">
-                <a href="boletim.html">Boletim</a>
+                <a href="<c:url value="boletim"/>">Boletim</a>
             </div>
 
             <div class="botao">
-                <a href="graficos.html">Gráficos</a>
+                <a href="<c:url value="chamada"/>">Chamada</a>
             </div>
 
             <div class="botao">
-                <a href="chamada.html">Chamada</a>
-            </div>
-
-            <div class="botao">
-                <a href="agenda.html">Agenda</a>
-            </div>
-
-            <div class="botao">
-                <a href="provas.html">Provas</a>
+                <a href="<c:url value="agenda"/>">Agenda</a>
             </div>
             
          </div>

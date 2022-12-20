@@ -22,11 +22,11 @@
     
     <nav class="cabecalho-menu">
       <img class="imagem-logo" img src="imagens/logo1W.png" alt="logo">
-      <a href="areadoprofessor.html" cabecalho-menu-item>Home</a>
+      <a href="<c:url value="area"/>" cabecalho-menu-item>Home</a>
       <a cabecalho-menu-item>Cursos</a>
       <a cabecalho-menu-item>Unidades</a>
       <a cabecalho-menu-item>Informações</a>
-      <a href="index.html" cabecalho-menu-item>Login</a>
+      <a href="<c:url value="index"/>" cabecalho-menu-item>Login</a>
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
     <img class="imagem-logo" img src="imagens/instagramW.png" alt = "insta">
     </nav>

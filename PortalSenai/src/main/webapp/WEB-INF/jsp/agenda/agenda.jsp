@@ -81,11 +81,11 @@
       <img class="imagem-logo" img src="imagens/logo1W.png" alt="logo">
 
       <ul>
-        <li><a href="areadoprofessor.html">Home</a></li>
+        <li><a href="<c:url value="area"/>">Home</a></li>
         <li><a href="#">Cursos</a></li>
         <li><a href="#">Unidades</a></li>
-        <li><a href="#">InformaÃ§Ãµes</a></li>
-        <li><a href="index.html">Login</a></li>
+        <li><a href="#">Informações</a></li>
+        <li><a href="<c:url value="index"/>">Login</a></li>
       </ul>
 
       <img class="imagem-logo" img src="imagens/facebookW.png" alt="fb">
@@ -409,7 +409,7 @@
     </tr>
 </table>
 
-<a class="back" href="areadoprofessor.html">Voltar para a pÃ¡gina principal</a>
+<a class="back" href="<c:url value="area"/>">Voltar para a pÃ¡gina principal</a>
 </body>
 
 </html>
